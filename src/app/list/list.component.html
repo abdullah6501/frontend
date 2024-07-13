@@ -1,0 +1,26 @@
+<div class="app-container">
+  <div class="header">
+    <h1>Project Portfolio</h1>
+  </div>
+  <div class="content">
+    <div class="left-panel">
+      <button
+        class="but"
+        mat-raised-button
+        color="primary"
+        (click)="openAddlistDialog()"
+      >
+        Add
+      </button>
+      <mat-list>
+        <mat-list-item *ngFor="let project of projects">
+          <button mat-button (click)="handleProjectClick(project)">
+            {{ project.projectlist }}
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="right-panel"></div>
+  </div>
+  <div class="footer"></div>
+</div>

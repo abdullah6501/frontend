@@ -1,0 +1,117 @@
+/* .app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #3f69d3;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.left-panel,
+.right-panel {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.left-panel {
+  flex: 20%;
+}
+
+.right-panel {
+  flex: 80%;
+}
+
+.footer {
+  background-color: #3f69d3;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+} */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #3f69d3;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.left-panel,
+.right-panel {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.footer {
+  background-color: #3f69d3;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+  .left-panel {
+    flex: 20%;
+  }
+
+  .right-panel {
+    flex: 80%;
+  }
+}
+
+/* Laptop view */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .left-panel {
+    flex: 25%;
+  }
+
+  .right-panel {
+    flex: 75%;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 481px) and (max-width: 768px) {
+  .left-panel {
+    flex: 30%;
+  }
+
+  .right-panel {
+    flex: 70%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    flex: 100%;
+  }
+
+  .right-panel {
+    flex: 100%;
+  }
+}

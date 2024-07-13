@@ -1,0 +1,8 @@
+.input {
+  width: 352px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+}

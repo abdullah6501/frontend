@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Add Item</h1>
+<div mat-dialog-content>
+  <mat-form-field class="input">
+    <input
+      matInput
+      placeholder="Enter text here"
+      name="textInput"
+      [(ngModel)]="textInput"
+    />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="button">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="submitForm()" color="primary">Submit</button>
+</div>
